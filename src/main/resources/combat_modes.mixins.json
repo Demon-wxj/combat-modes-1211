@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "local.combatmodes.mixin",
+  "plugin": "local.combatmodes.compat.CompatibilityPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AttributeCaptureMixin",
+    "StackComponentsMixin",
+    "ClassicLivingMixin",
+    "ClassicPlayerMixin",
+    "ClassicEffectModifierMixin",
+    "ClassicEnchantmentMixin",
+    "ClassicSwordCompatMixin",
+    "ClassicUseMixin",
+    "ClassicSplashMixin",
+    "MegaWallsRuleOwnerMixin",
+    "MinigameRulesMixin",
+    "MinigameSettingsMixin",
+    "ClassicPotionTooltipMixin",
+    "ClassicHoeMixin"
+  ],
+  "client": [
+    "ClassicInputMixin",
+    "ClassicWeaponTooltipMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

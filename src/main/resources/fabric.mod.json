@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "combat_modes",
+  "version": "${version}",
+  "name": "战斗模式切换",
+  "description": "Switch between classic and modern combat.",
+  "authors": [
+    "wxj"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "local.combatmodes.CombatModes"
+    ],
+    "client": [
+      "local.combatmodes.client.CombatClient"
+    ]
+  },
+  "mixins": [
+    "combat_modes.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "goldenagecombat": "21.1.3",
+    "swordblockingmechanics": "21.1.1",
+    "puzzleslib": ">=21.1.60"
+  },
+  "license": "GPL-3.0-only"
+}
